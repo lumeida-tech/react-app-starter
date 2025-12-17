@@ -1,4 +1,4 @@
-# my-tanstack-app
+# react-app-starter
 Application full-stack basée sur **TanStack Start** (Router + SSR) avec **Bun**, **Tailwind CSS**, **TanStack Query** et **i18n via Lingui**.
 
 ## Stack & dépendances (principales)
