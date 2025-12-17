@@ -118,7 +118,3 @@ docker build -t my-tanstack-app:prod .
 ```bash
 docker run --rm -p 3000:3000 -e PORT=3000 my-tanstack-app:prod
 ```
-
-## Notes importantes
-- La configuration Vite utilise `routesDirectory: 'modules'` (donc **ne pas** mettre les routes dans `src/routes`).
-- Le plugin `nitro()` n’est pas activé, car il entre en conflit avec un `server.ts` à la racine 
