@@ -43,13 +43,49 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'TanStack Start Starter',
+        title: 'React App Starter - Modern Full-stack Template',
+      },
+      {
+        name: 'description',
+        content: 'Un starter pack ultra-rapide avec TanStack Start, Bun et Tailwind CSS.',
+      },
+      {
+        property: 'og:title',
+        content: 'React App Starter',
+      },
+      {
+        property: 'og:description',
+        content: 'Bâtissez vos applications modernes avec la vitesse de Bun et la puissance de TanStack Start.',
+      },
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
       },
     ],
     links: [
       {
         rel: 'stylesheet',
         href: appCss,
+      },
+      {
+        rel: 'icon',
+        href: '/favicon.ico',
+      },
+      {
+        rel: 'apple-touch-icon',
+        href: '/logo192.png',
+      },
+      {
+        rel: 'manifest',
+        href: '/manifest.json',
+      },
+      {
+        rel: 'canonical',
+        href: 'https://react-app-starter.com',
       },
     ],
   }),

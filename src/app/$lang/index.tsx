@@ -3,7 +3,20 @@ import { Trans } from '@lingui/react/macro'
 
 
 
-export const Route = createFileRoute('/$lang/')({ component: App })
+export const Route = createFileRoute('/$lang/')({
+  component: App,
+  head: () => ({
+    meta: [
+      {
+        title: 'Accueil | React App Starter',
+      },
+      {
+        name: 'description',
+        content: 'Bienvenue sur le starter pack ultime pour TanStack Start.',
+      },
+    ],
+  }),
+})
 
 function App() {
   return (

@@ -8,10 +8,10 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from './modules/__root'
-import { Route as LangIndexRouteImport } from './modules/$lang/index'
-import { Route as LangTodosRouteImport } from './modules/$lang/todos'
-import { Route as LangAboutRouteImport } from './modules/$lang/about'
+import { Route as rootRouteImport } from './app/__root'
+import { Route as LangIndexRouteImport } from './app/$lang/index'
+import { Route as LangTodosRouteImport } from './app/$lang/todos'
+import { Route as LangAboutRouteImport } from './app/$lang/about'
 
 const LangIndexRoute = LangIndexRouteImport.update({
   id: '/$lang/',

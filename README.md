@@ -13,13 +13,14 @@ Application full-stack basée sur **TanStack Start** (Router + SSR) avec **Bun**
 - **Toasts**: `sonner`
 - **Theme**: `next-themes`
 - **HTTP client**: `ky`
+- **Images**: `@unpic/react` (Composant `Image` pour des images optimisées)
 - **State (optionnel)**: `jotai`
 
 ## Structure du projet
-- `src/modules/` : routes (file-based) — ex:
-  - `src/modules/__root.tsx`
-  - `src/modules/$lang/index.tsx`
-  - `src/modules/$lang/about.tsx`
+- `src/app/` : routes (file-based) — ex:
+  - `src/app/__root.tsx`
+  - `src/app/$lang/index.tsx`
+  - `src/app/$lang/about.tsx`
 - `src/middlewares/` : middlewares TanStack Start (ex: i18n)
 - `src/shared/` : composants partagés, providers, stores
 - `src/lib/` : utilitaires (ex: `cn`, i18n utils, http client)
@@ -104,6 +105,26 @@ bun test
 ### Typecheck
 ```bash
 bun x tsc -p tsconfig.json --noEmit
+```
+
+## Optimisation des Images
+Ce projet utilise `@unpic/react` pour servir des images optimisées.
+
+Exemple d'utilisation :
+```tsx
+import { Image } from '@unpic/react'
+
+export function MyComponent() {
+  return (
+    <Image
+      src="/logo192.png"
+      layout="constrained"
+      width={192}
+      height={192}
+      alt="Logo"
+    />
+  )
+}
 ```
 
 ## Déploiement Docker (prod)

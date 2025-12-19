@@ -32,7 +32,7 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
       tanstackStart({
         router: {
-          routesDirectory: 'modules',
+          routesDirectory: 'app',
           routeFileIgnorePattern: '\\.ts$',
         },
       }),
