@@ -37,7 +37,8 @@ ENV PORT=3000
 
 # Install only production deps for runtime (smaller image)
 COPY package.json bun.lock ./
-RUN bun install --production --frozen-lockfile
+RUN rm -rf node_modules ~/.bun/install/cache && \
+    bun install --production --no-verify
 
 # Copy the built artifacts + your custom production server
 COPY --from=build /app/dist ./dist
