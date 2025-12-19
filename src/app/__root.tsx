@@ -22,6 +22,7 @@ import { i18nMiddleware } from '@/middlewares/i18n'
 import { Navbar } from '../shared/components/Navbar'
 import { ToasterProvider } from '@/shared/providers/toaster-provider'
 import { DEFAULT_LOCALE, getLocaleFromPath } from '@/lib/i18n-utils'
+import { ThemeProvider } from 'next-themes'
 
 interface MyRouterContext {
   queryClient: QueryClient
@@ -112,29 +113,31 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   }, [locale])
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
       <body>
-        <I18nProvider i18n={i18n}>
-          <Navbar />
-          {children}
-          <ToasterProvider />
-          <TanStackDevtools
-            config={{
-              position: 'bottom-right',
-            }}
-            plugins={[
-              {
-                name: 'Tanstack Router',
-                render: <TanStackRouterDevtoolsPanel />,
-              },
-              TanStackQueryDevtools,
-            ]}
-          />
-          <Scripts />
-        </I18nProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <I18nProvider i18n={i18n}>
+            <Navbar />
+            {children}
+            <ToasterProvider />
+            <TanStackDevtools
+              config={{
+                position: 'bottom-right',
+              }}
+              plugins={[
+                {
+                  name: 'Tanstack Router',
+                  render: <TanStackRouterDevtoolsPanel />,
+                },
+                TanStackQueryDevtools,
+              ]}
+            />
+            <Scripts />
+          </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -1,6 +1,7 @@
 import { Trans } from '@lingui/react/macro'
 import { Image } from '@unpic/react'
 import LanguageSwitcher from './LanguageSwitcher'
+import ThemeSwitcher from './ThemeSwitcher'
 import { LocalizedLink } from './LocalizedLink'
 
 export function Navbar() {
@@ -28,6 +29,7 @@ export function Navbar() {
                 </LocalizedLink>
 
                 <div className="flex items-center gap-4">
+                    <ThemeSwitcher />
                     <LanguageSwitcher />
                     <LocalizedLink
                         to="/about"
