@@ -3,7 +3,33 @@ import { Trans } from '@lingui/react/macro'
 
 
 export const Route = createFileRoute('/$lang/about')({
-    component: RouteComponent,
+  component: RouteComponent,
+  head: () => ({
+    meta: [
+      { title: 'About | React App Starter' },
+      {
+        name: 'description',
+        content:
+          'A modern, typesafe, and powerful starter template for building web applications with TanStack Start, Bun, and Tailwind CSS.',
+      },
+      { property: 'og:title', content: 'About | React App Starter' },
+      {
+        property: 'og:description',
+        content: 'A modern, typesafe, and powerful starter template for building web applications properly.',
+      },
+      {
+        name: 'script:ld+json',
+        content: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://react-app-starter.com' },
+            { '@type': 'ListItem', position: 2, name: 'About', item: 'https://react-app-starter.com/about' },
+          ],
+        }),
+      },
+    ],
+  }),
 })
 
 function RouteComponent() {

@@ -7,7 +7,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://react-app-starter.com/en"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://react-app-starter.com/fr"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://react-app-starter.com/fr"/>
-    <lastmod>2025-12-19</lastmod>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- English Home -->
@@ -15,7 +16,9 @@
     <loc>https://react-app-starter.com/en</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://react-app-starter.com/fr"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://react-app-starter.com/en"/>
-    <lastmod>2025-12-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://react-app-starter.com/fr"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
@@ -24,7 +27,9 @@
     <loc>https://react-app-starter.com/fr/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://react-app-starter.com/en/about"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://react-app-starter.com/fr/about"/>
-    <lastmod>2025-12-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://react-app-starter.com/fr/about"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- English About -->
@@ -32,7 +37,9 @@
     <loc>https://react-app-starter.com/en/about</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://react-app-starter.com/fr/about"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://react-app-starter.com/en/about"/>
-    <lastmod>2025-12-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://react-app-starter.com/fr/about"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
@@ -41,7 +48,9 @@
     <loc>https://react-app-starter.com/fr/todos</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://react-app-starter.com/en/todos"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://react-app-starter.com/fr/todos"/>
-    <lastmod>2025-12-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://react-app-starter.com/fr/todos"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- English Todos -->
@@ -49,7 +58,9 @@
     <loc>https://react-app-starter.com/en/todos</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://react-app-starter.com/fr/todos"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://react-app-starter.com/en/todos"/>
-    <lastmod>2025-12-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://react-app-starter.com/fr/todos"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>

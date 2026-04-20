@@ -1,7 +1,7 @@
 {
   "short_name": "React Starter",
   "name": "React App Starter",
-  "description": "Une application full-stack moderne basée sur TanStack Start, Bun et Tailwind CSS.",
+  "description": "Un starter pack ultra-rapide avec TanStack Start, Bun et Tailwind CSS. Construit pour la performance, la sécurité et une DX optimale.",
   "lang": "fr",
   "icons": [
     {
@@ -12,17 +12,27 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "categories": [
+    "productivity",
+    "utilities",
+    "technology"
+  ],
+  "dir": "ltr",
+  "prefer_related_applications": false
 }

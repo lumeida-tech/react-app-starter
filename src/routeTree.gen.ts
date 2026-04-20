@@ -32,7 +32,7 @@ const LangAboutRoute = LangAboutRouteImport.update({
 export interface FileRoutesByFullPath {
   '/$lang/about': typeof LangAboutRoute
   '/$lang/todos': typeof LangTodosRoute
-  '/$lang': typeof LangIndexRoute
+  '/$lang/': typeof LangIndexRoute
 }
 export interface FileRoutesByTo {
   '/$lang/about': typeof LangAboutRoute
@@ -47,7 +47,7 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/$lang/about' | '/$lang/todos' | '/$lang'
+  fullPaths: '/$lang/about' | '/$lang/todos' | '/$lang/'
   fileRoutesByTo: FileRoutesByTo
   to: '/$lang/about' | '/$lang/todos' | '/$lang'
   id: '__root__' | '/$lang/about' | '/$lang/todos' | '/$lang/'
@@ -64,7 +64,7 @@ declare module '@tanstack/react-router' {
     '/$lang/': {
       id: '/$lang/'
       path: '/$lang'
-      fullPath: '/$lang'
+      fullPath: '/$lang/'
       preLoaderRoute: typeof LangIndexRouteImport
       parentRoute: typeof rootRouteImport
     }

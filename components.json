@@ -17,5 +17,9 @@
     "lib": "@/lib",
     "hooks": "@/shared/hooks"
   },
-  "iconLibrary": "lucide"
+  "iconLibrary": "lucide",
+  "registries": {
+    "@magicui": "https://magicui.design/r/{name}.json",
+    "@reui": "https://reui.io/r/{name}.json"
+  }
 }

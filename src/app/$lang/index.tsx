@@ -7,12 +7,27 @@ export const Route = createFileRoute('/$lang/')({
   component: App,
   head: () => ({
     meta: [
-      {
-        title: 'Accueil | React App Starter',
-      },
+      { title: 'Accueil | React App Starter' },
       {
         name: 'description',
-        content: 'Bienvenue sur le starter pack ultime pour TanStack Start.',
+        content: 'Bienvenue sur le starter pack ultime pour TanStack Start, Bun et Tailwind CSS.',
+      },
+      { property: 'og:title', content: 'Accueil | React App Starter' },
+      {
+        property: 'og:description',
+        content: 'Bienvenue sur le starter pack ultime pour TanStack Start, Bun et Tailwind CSS.',
+      },
+      { name: 'twitter:title', content: 'Accueil | React App Starter' },
+      {
+        name: 'script:ld+json',
+        content: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'React App Starter',
+          url: 'https://react-app-starter.com',
+          logo: 'https://react-app-starter.com/logo512.png',
+          sameAs: [],
+        }),
       },
     ],
   }),
